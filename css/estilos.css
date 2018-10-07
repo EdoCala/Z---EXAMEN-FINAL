@@ -135,8 +135,8 @@ img
 .container 
 {
 	-webkit-display: flex;
-	display: flex;
 	-webkit-flex-flow: row wrap;
+	display: flex;
 	flex-flow: row wrap;
 }
 @media (max-width: 900px)
@@ -161,7 +161,7 @@ img
 		border-bottom-right-radius:10px;
 	}
 }
-@media (max-width: 460px)
+@media (max-width: 480px)
 {
 	.m1 h1
 	{
