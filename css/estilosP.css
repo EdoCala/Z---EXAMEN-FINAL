@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+body 
+{
+	font-family: 'Dancing Script', cursive;
+	width: 85%;
+	margin: auto;
+	border-radius: 10px;
+}
+div
+{
+	justify-content:center;
+	-webkit-justify-content:center;
+}
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	animation-name: saltoEntrada;
+	animation-duration: 1s;
+	-webkit-animation-name: saltoEntrada;
+	-webkit-animation-duration: 1s;
+	-ms-animation-name: saltoEntrada;
+	-ms-animation-duration: 1s;
+}
+.container div {
+	box-sizing: border-box;
+	padding: 20px;
+}
+h1
+{
+	text-shadow: 2px 2px #02010a;
+	color: white;
+	font-size: 2em;
+}
+h2
+{
+	text-align: center;
+}
+a
+{
+	color: white;
+	text-decoration: none;
+	padding: 1em;
+}
+img
+{
+	box-shadow: 2px 2px 2px #02010a;
+}
+.m1 
+{
+	color: black;
+	background-color: #5b7989;
+	height: 6em;
+}
+.m2 
+{
+	color: white;
+	background-color: #5b7989;
+	text-align: right;
+	height:6em;
+}
+.m2 h1
+{
+	font-size: 1em;
+	padding: em 0em;
+	text-shadow: none;
+}
+.m3 
+{
+	color: black;
+	background-color: #d5c75f;
+}
+.m3 img
+{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	-ms-filter: blur(10px);
+}
+.m4 
+{
+	color: black;
+	background-color: #d5c75f;
+}
+.m4 img
+{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+.m5 
+{
+	color: black;
+	background-color: #d5c75f;
+}
+.m5 img
+{
+	-webkit-filter:sepia(90%);
+	filter:sepia(90%);
+}
+.m6 
+{
+	color: black;
+	background-color: #d5c75f;
+}
+.m6 img
+{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+.m7 
+{
+	color: black;
+	background-color: #d5c75f;
+}
+.m8 
+{
+	color: black;
+	background-color: #d5c75f;
+}
+.m8 img
+{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+.m9 
+{
+	color: black;
+	background-color: #C6d5c5;
+}
+.m10 
+{
+	color: black;
+	background-color: #C6d5c5;
+}
+.m11 
+{
+	color: black;
+	background-color: #C6d5c5;
+}
+.m12 
+{
+	color: black;
+	background-color: #C6d5c5;
+}
+.adaptativa-porcentaje
+{
+	width: 100%;
+}
+.container 
+{
+	-webkit-display: flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+@media (max-width: 900px)
+{
+	.m1,.m2
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.m3,.m4,.m5, .m6, .m7,.m8,.m9,.m10,.m11,.m12
+	{
+		width: 100%;
+	}
+	.m1
+	{
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+	}
+	.m12
+	{
+		border-bottom-left-radius:10px;
+		border-bottom-right-radius:10px;
+	}
+}
+@media (max-width: 460px)
+{
+	.m1 h1
+	{
+		font-size: 1.5em;
+	}
+	h2
+	{
+		font-size: 1.2em;
+	}
+}
+@media (min-width: 901px)
+{
+	.m1,.m2 
+	{
+		width: 50%;
+	}
+	.m1
+	{
+		border-top-left-radius: 10px;
+	}
+	.m2
+	{
+		border-top-right-radius: 10px;
+	}
+	
+	.m3,.m4,.m5
+	{
+		width: 33.33%;
+	}
+	.m6,.m7,.m8
+	{
+		width: 33.33%;
+	}
+	.m9,.m10,.m11,.m12
+	{
+		width: 25%;
+	}
+	.m9
+	{
+		border-bottom-left-radius: 10px;
+	}
+	.m12
+	{
+		border-bottom-right-radius: 10px;
+	}
+}
+@-webkit-keyframes saltoEntrada
+{
+	0%
+	{
+		margin-top: 150px;
+	}
+	60%
+	{
+		margin-top: -5px;
+	}
+	100%
+	{
+		margin-top: 0px;
+	}
+}

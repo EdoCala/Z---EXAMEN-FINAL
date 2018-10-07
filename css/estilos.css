@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+body 
+{
+	font-family: 'Dancing Script', cursive;
+	width: 85%;
+	margin: auto;
+	border-radius: 10px;
+}
+div
+{
+	justify-content:center;
+	-webkit-justify-content:center;
+}
+.container 
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	animation-name: saltoEntrada;
+	animation-duration: 1s;
+	-webkit-animation-name: saltoEntrada;
+	-webkit-animation-duration: 1s;
+	-ms-animation-name: saltoEntrada;
+	-ms-animation-duration: 1s;
+}
+.container div 
+{
+	box-sizing: border-box;
+	padding: 20px;
+}
+h1
+{
+	text-shadow: 2px 2px #02010a;
+	color: white;
+	font-size: 2em;
+}
+h2
+{
+	text-align: center;
+}
+a
+{
+	color: white;
+	text-decoration: none;
+	padding: 1em;
+}
+img
+{
+	box-shadow: 2px 2px 2px #02010a;
+}
+.m1 
+{
+	color: black;
+	background-color: #5b7989;
+	height: 6em;
+}
+.m2 
+{
+	color: white;
+	background-color: #5b7989;
+	text-align: right;
+	height:6em;
+}
+.m2 h1
+{
+	font-size: 1em;
+	padding: em 0em;
+	text-shadow: none;
+}
+.m3 
+{
+	color: black;
+	background-color: #82c3a6;
+	text-align: center;
+}
+.m4 
+{
+	color: black;
+	background-color: #d5c75f;
+	text-align: center;
+}
+.m4 img:hover
+{
+	transform: rotate(10deg);
+	transition-duration: 2s;
+	-webkit-transform: rotate(10deg);
+	-webkit-transition-duration: 2s;
+	-ms-transform: rotate(10deg);
+	-ms-transition-duration: 2s;
+	-moz-transform: rotate(10deg);
+	-moz-transition-duration: 2s;
+}
+.m5 
+{
+	color: black;
+	background-color: #d5c75f;
+	text-align: center;
+}
+.m5 img:hover
+{
+	transform: translate(20px,-5px);
+	transition-duration: 2s;
+	-webkit-transform: translate(20px,-5px);
+	-webkit-transition-duration: 2s;
+	-ms-transform: translate(20px,-5px);
+	-ms-transition-duration: 2s;
+	-moz-transform: translate(20px,-5px);
+	-moz-transition-duration: 2s;
+}
+.m6 
+{
+	color: black;
+	background-color: #C6d5c5;
+}
+.m7 
+{
+	color: black;
+	background-color: #C6d5c5;
+}
+.m8 
+{
+	color: black;
+	background-color: #C6d5c5;
+}
+.m9 
+{
+	color: black;
+	background-color: #C6d5c5;
+}
+.adaptativa-porcentaje
+{
+	width: 90%;
+}
+.container 
+{
+	-webkit-display: flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+@media (max-width: 900px)
+{
+	.m1,.m2
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.m3,.m4,.m5, .m6, .m7,.m8,.m9
+	{
+		width: 100%;
+	}
+	.m1
+	{
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+	}
+	.m9
+	{
+		border-bottom-left-radius:10px;
+		border-bottom-right-radius:10px;
+	}
+}
+@media (max-width: 460px)
+{
+	.m1 h1
+	{
+		font-size: 1.5em;
+	}
+	h2
+	{
+		font-size: 1.2em;
+	}
+}
+@media (min-width: 901px)
+{
+	.m1,.m2 
+	{
+		width: 50%;
+	}
+	.m1
+	{
+		border-top-left-radius: 10px;
+	}
+	.m2
+	{
+		border-top-right-radius: 10px;
+	}
+	.m3
+	{
+		width: 100%;
+	}
+	.m4,.m5
+	{
+		width: 50%;
+	}
+	.m6,.m7,.m8,.m9
+	{
+		width: 25%;
+	}
+	.m6
+	{
+		border-bottom-left-radius: 10px;
+	}
+	.m9
+	{
+		border-bottom-right-radius: 10px;
+	}
+}
+@-webkit-keyframes saltoEntrada
+{
+	0%
+	{
+		margin-top: 150px;
+	}
+	60%
+	{
+		margin-top: -5px;
+	}
+	100%
+	{
+		margin-top: 0px;
+	}
+}
